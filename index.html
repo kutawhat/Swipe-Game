@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,8 +25,15 @@
 
   <body>
     <main>
+      <div class="title">
+        Swipe Game
+        <i class="ph ph-hand-swipe-left"></i>
+      </div>
+
       <div id="parent">
         <div id="scrollable-container">
+          <div class="scrollable-card"></div>
+          <div class="scrollable-card"></div>
           <div class="scrollable-card"></div>
           <div class="scrollable-card"></div>
           <div class="scrollable-card"></div>
@@ -68,7 +75,9 @@
           <div class="visible-card">
             <div class="visible-card-content">
               <i class="ph ph-lightbulb badge-icon think"></i>
-              <topic-content text="Кто такие нефоры?"></topic-content>
+              <topic-content
+                text="Кого можно отнести к нефорам?"
+              ></topic-content>
             </div>
           </div>
           <div class="visible-card">
@@ -83,6 +92,18 @@
             <div class="visible-card-content">
               <i class="ph ph-fire badge-icon hot"></i>
               <topic-content text="Рашка — допустимый жаргон?"></topic-content>
+            </div>
+          </div>
+          <div class="visible-card">
+            <div class="visible-card-content">
+              <i class="ph ph-fire badge-icon hot"></i>
+              <topic-content text="Есть ли обратный расизм?"></topic-content>
+            </div>
+          </div>
+          <div class="visible-card">
+            <div class="visible-card-content">
+              <i class="ph ph-fire badge-icon hot"></i>
+              <topic-content text="Есть ли обратный сексизм?"></topic-content>
             </div>
           </div>
         </div>

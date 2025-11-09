@@ -1,13 +1,15 @@
 :root {
   /*! Color Palette */
+  --color-bg-main: #fbfbf8;
+  --color-bg-card: #ffffff;
   --color-link: #285aff;
   --color-text-primary: #15110d;
-  --color-text-secondary: #d8d8d8;
+  --color-text-secondary: #91857c;
+  --color-text-tertiary: #d8d8d8;
   --color-text-hot: #ff4800;
   --color-text-think: #16dd87;
   --color-text-person: #ff43ef;
-  --color-bg-main: #fbfbf8;
-  --color-bg-card: #ffffff;
+  --color-border: #f0ebe7;
 
   /*! Size */
   --size-card-width: 28rem;
@@ -19,7 +21,7 @@ body {
   background-color: var(--color-bg-main);
   background-image: radial-gradient(
     circle,
-    var(--color-text-secondary) 1px,
+    var(--color-text-tertiary) 1px,
     rgba(0, 0, 0, 0) 2px
   );
   background-size: 20px 20px;
@@ -34,6 +36,24 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100svh;
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  top: 40rem;
+  padding: 0 0 0 2.5rem;
+  font-size: 6rem;
+  color: var(--color-text-primary);
+  font-family: "Instrument Serif", serif;
+}
+
+.title > i {
+  rotate: 15deg;
+  color: var(--color-text-secondary);
 }
 
 #parent {
@@ -96,10 +116,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: var(--color-border) 1px solid;
   border-radius: 1rem;
   width: var(--size-card-width);
   height: var(--size-card-height);
-  padding: 2rem 1.5rem 1.5rem;
+  padding: 2rem 4rem;
   background-color: var(--color-bg-card);
   background-position: center;
   background-size: cover;
@@ -135,7 +156,7 @@ main {
   top: 2rem;
   right: 2rem;
   font-size: 3rem;
-  color: var(--color-text-secondary);
+  color: var(--color-text-tertiary);
 }
 
 .hot {
