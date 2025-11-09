@@ -111,6 +111,8 @@ main {
   color: var(--color-link);
   text-decoration-color: var(--color-link);
   transition: text-decoration-color 0.2s ease;
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .plus-icon {
