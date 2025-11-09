@@ -124,6 +124,7 @@ main {
   text-underline-offset: auto;
   text-underline-position: from-font;
   color: var(--color-link);
+  pointer-events: auto;
 }
 
 .plus-icon {
