@@ -43,12 +43,10 @@ main {
 }
 
 .title {
-  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 2rem;
-  top: 36rem;
   padding: 0 0 0 2.5rem;
   font-size: 6rem;
   color: var(--color-text-primary);
@@ -61,10 +59,9 @@ main {
 }
 
 .description {
-  position: absolute;
-  top: 42.5rem;
   font-size: 2rem;
   width: 60%;
+  padding: 0 0 12rem 0;
   color: var(--color-text-primary);
   font-family: var(--font-body);
   text-align: center;
