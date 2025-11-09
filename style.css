@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: rgb(251, 251, 248);
-  background-image: radial-gradient(circle, #e3e3e3 1px, rgba(0, 0, 0, 0) 1px);
+  background-image: radial-gradient(circle, #d8d8d8 1px, rgba(0, 0, 0, 0) 2px);
   background-size: 20px 20px;
   background-repeat: repeat;
   font-family: "JetBrains Mono", monospace;
