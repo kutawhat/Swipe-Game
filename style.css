@@ -3,6 +3,9 @@
   --color-link: #285aff;
   --color-text-primary: #15110d;
   --color-text-secondary: #d8d8d8;
+  --color-text-hot: #ff4800;
+  --color-text-think: #16dd87;
+  --color-text-person: #ff43ef;
   --color-bg-main: #fbfbf8;
   --color-bg-card: #ffffff;
 
@@ -127,12 +130,22 @@ main {
   pointer-events: auto;
 }
 
-.plus-icon {
+.badge-icon {
   position: absolute;
-  top: 12px;
-  right: 20px;
-  font-size: 2rem;
-  font-weight: 100;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
   color: var(--color-text-secondary);
-  user-select: none;
+}
+
+.hot {
+  color: var(--color-text-hot);
+}
+
+.think {
+  color: var(--color-text-think);
+}
+
+.person {
+  color: var(--color-text-person);
 }
