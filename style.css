@@ -61,7 +61,7 @@ main {
 .description {
   font-size: 2rem;
   width: 60%;
-  padding: 0 0 12rem 0;
+  padding: 0 0 6rem 0;
   color: var(--color-text-primary);
   font-family: var(--font-body);
   text-align: center;
