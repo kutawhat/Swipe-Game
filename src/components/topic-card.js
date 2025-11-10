@@ -19,13 +19,13 @@ class TopicContent extends HTMLElement {
 
     connectedCallback() {
         // Get attributes
-        const termin = this.getAttribute('termin');
+        const person = this.getAttribute('person');
         const text = this.getAttribute('text');
         const link = this.getAttribute('link');
 
         // Set content
-        if (termin && link) {
-            this.textEl.innerHTML = `<a href="${link}" class="termin-link" target="_blank">${termin}</a> ${text}`;
+        if (person && link) {
+            this.textEl.innerHTML = `<a href="${link}" class="person-link" target="_blank">${person}</a> ${text}`;
         } else {
             this.textEl.textContent = text;
         }
