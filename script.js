@@ -1,3 +1,18 @@
+const isDesktop = window.innerWidth >= 1024;
+
+if (isDesktop) {
+  const popup = document.getElementById('desktop-popup');
+  const overlay = document.getElementById('popup-overlay');
+  popup.style.display = 'block';
+  overlay.style.display = 'block';
+
+  document.getElementById('close-popup').onclick = () => {
+    popup.style.display = 'none';
+    overlay.style.display = 'none';
+  };
+}
+
+
 class CardStack {
   constructor() {
     this.scrollableContainer = document.querySelector("#scrollable-container");
