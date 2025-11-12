@@ -95,6 +95,27 @@ main {
   font-family: var(--font-body);
 }
 
+@media (min-width: 1024px) {
+  #popup-overlay,
+  #desktop-popup {
+    display: block;
+  }
+
+  /* Но popup использует flex column — чтобы при display:block он всё ещё велся как flex */
+  #desktop-popup {
+    display: flex;
+  }
+}
+
+/* Небольшая адаптация для очень узких экранов (предохранитель) */
+@media (max-width: 420px) {
+  #desktop-popup {
+    width: calc(100% - 32px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .title {
   display: flex;
   flex-direction: row;

@@ -1,20 +1,26 @@
-function isDesktop() {
-  const ua = navigator.userAgent.toLowerCase();
-  const isMobile = /mobile|android|iphone|ipad|ipod|opera mini|iemobile|wpdesktop|tablet/i.test(ua);
-  return !isMobile;
-}
-
-if (isDesktop()) {
+document.addEventListener('DOMContentLoaded', () => {
   const popup = document.getElementById('desktop-popup');
   const overlay = document.getElementById('popup-overlay');
-  popup.style.display = 'flex';
-  overlay.style.display = 'block';
+  const closeBtn = document.getElementById('close-popup');
 
-  document.getElementById('close-popup').onclick = () => {
-    popup.style.display = 'none';
-    overlay.style.display = 'none';
-  };
-}
+  if (popup && overlay && closeBtn) {
+    popup.style.display = 'block';
+    overlay.style.display = 'block';
+
+    // Закрытие по кнопке
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+
+    // Закрытие по клику на overlay
+    overlay.addEventListener('click', () => {
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+  }
+});
+
 
 
 class CardStack {
