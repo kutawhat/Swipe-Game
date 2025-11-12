@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.getElementById('close-popup');
 
   if (popup && overlay && closeBtn) {
-    popup.style.display = 'block';
-    overlay.style.display = 'block';
 
     // Закрытие по кнопке
     closeBtn.addEventListener('click', () => {
