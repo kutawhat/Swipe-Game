@@ -1,9 +1,13 @@
-const isDesktop = window.innerWidth >= 1024;
+function isDesktop() {
+  const ua = navigator.userAgent.toLowerCase();
+  const isMobile = /mobile|android|iphone|ipad|ipod|opera mini|iemobile|wpdesktop|tablet/i.test(ua);
+  return !isMobile;
+}
 
-if (isDesktop) {
+if (isDesktop()) {
   const popup = document.getElementById('desktop-popup');
   const overlay = document.getElementById('popup-overlay');
-  popup.style.display = 'block';
+  popup.style.display = 'flex';
   overlay.style.display = 'block';
 
   document.getElementById('close-popup').onclick = () => {
